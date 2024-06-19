@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: right;
+    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #E8E8E8;
 }
@@ -13,10 +13,53 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 1px 1px 5px 1px rgb(66, 104, 114);
+    box-shadow: 1px 1px 10px 1px rgb(66, 104, 114);
     margin-top: 100px;   
 }
 
 .form-field form {
-    
+    margin-top: 50px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form label {
+    margin-top: -30px;
+    color: rgba(156, 163, 175, 1);
+}
+
+.input-group input:focus {
+    border-color: rgba(167, 139, 250);
+}
+  
+
+.form-field form input {
+    border-radius: 5px;
+    background-color: #111827;
+    border: 1px solid #62656D;
+    height: 2rem;
+    outline: 0;
+}
+
+.form-field form .submit {
+    border-radius: 5px;
+    background-color: #A78BFA;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 200ms;
+    margin-top:-30px;
+}
+
+.form-field form .submit:hover {
+    background-color: #cdbff8; 
 }
